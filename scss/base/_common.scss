@@ -4,13 +4,6 @@ body {
   background-color: var(--primary-title-color);
 }
 
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
-
 p,
 h1,
 h2,
@@ -32,9 +25,8 @@ img {
   height: auto;
 }
 
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
