@@ -7,12 +7,16 @@
 }
 .our-business-list {
   display: flex;
+  @extend %list;
 }
 .our-business-item {
   position: relative;
 
   width: 370px;
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .our-business-item-overlay {
   position: absolute;

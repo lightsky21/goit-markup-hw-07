@@ -1,4 +1,4 @@
-.hero > .container {
+.hero__container {
   width: 696px;
 }
 
@@ -47,10 +47,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--timing-function);
-}
-.hero-btn:focus,
-.hero-btn:hover,
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: var(--hero-btn-focus-background-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--hero-btn-focus-background-color);
+  }
 }

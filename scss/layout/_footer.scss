@@ -31,28 +31,6 @@
 .footer__contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer__contacts-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-contacts-color);
-
-  transition: color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-.social-list__link_with-background-color {
-  background-color: var(--footer-icon-background-color);
-  color: var(--primary-title-color);
-  transition: background-color 250ms var(--timing-function);
-  &:focus,
-  &:hover {
-    background-color: var(--accent-color);
-  }
-}
 
 .footer__second-part-text,
 .footer__third-part-text {
@@ -70,15 +48,15 @@
   margin-left: auto;
 }
 
-.footer-form {
+.sub-form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-form-field {
+.sub-form__field {
   margin-right: 12px;
 }
-.footer-form-input {
+.sub-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -86,8 +64,8 @@
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.footer-form-input,
-.footer-form-input::placeholder {
+.sub-form__input,
+.sub-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -95,7 +73,7 @@
 
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-form-btn {
+.sub-form__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -112,12 +90,36 @@
 
   background-color: var(--accent-color);
 }
-.form-footer-btn-icon {
+.sub-form__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
 
-.social-list__icon_grey {
+.social-list__icon_white {
   fill: currentColor;
+}
+
+.footer__contacts-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+
+  transition: color 250ms var(--timing-function);
+  @extend %link;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.social-list__link_with-background-color {
+  background-color: var(--footer-icon-background-color);
+  color: var(--primary-title-color);
+  transition: background-color 250ms var(--timing-function);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }

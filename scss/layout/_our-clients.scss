@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @extend %list;
 }
 .our-clients-item:not(:last-child) {
   margin-right: 30px;
@@ -20,12 +21,15 @@
   color: var(--icon-fill);
   transition: border-color 250ms var(--timing-function),
     color 250ms var(--timing-function);
+  @extend %link;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
-.our-clients-link:hover,
-.our-clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
-}
+
 .our-clients-icon {
   fill: currentColor;
 }
